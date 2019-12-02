@@ -1,0 +1,111 @@
+
+*{
+    margin:0;padding:0;box-sizing: border-box;
+}
+
+body{
+    background: white;
+    overflow: hidden;
+    font-family: SEGOE UI;
+    font-size: 100%;
+}
+div.container{
+    position: relative;
+    width:100%;
+    float:left;
+}
+
+.container .entry{
+    position: relative;
+    float: left;
+    margin-top:15%;
+    margin-left:10%;
+    width:30%;
+}
+
+.container .brand{
+    float:right;
+    margin-top:6%;
+    margin-right: -14%;
+}
+
+.entry .logo{
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+.entry input{
+    border:none;
+    outline: none;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width:100%;
+    float:left;
+    margin-bottom: 5%;
+    color:#9C27B0;
+    outline:none;
+    border-bottom: 1px solid #9C27B0;
+    padding: 2%;
+    font-size: 1.1em;
+    font-family: SEGOE UI;
+}
+
+.entry input[type='submit']{
+    border:none;
+    cursor: pointer;
+    background: #0084ff;
+    color:white;
+    width:30%;
+    font-size: 1em;
+    border-radius: 25px;
+    margin-left:30%;
+}
+
+.formcontent{
+    margin-top: 10%;
+}
+
+.entry div{
+    margin-bottom: 5%;
+}
+
+.tag{
+    text-align: center;
+    font-size: 1.3em;
+    color: #9C27B0;
+}
+
+.arrow_box {
+    display: none;
+    float:left;
+    width:50%;
+    padding: 2%;
+    border-radius: 10px;
+	position: relative;
+	background: #0084ff;
+	border: 1px solid #c2e1f5;
+    color:white;
+    text-align: center;
+}
+.arrow_box:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #0084ff;
+	border-width: 10px;
+	margin-top: -10px;
+    content: "";
+}
+
+::-webkit-input-placeholder{
+    color:#9C27B0;
+}

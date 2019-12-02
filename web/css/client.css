@@ -1,0 +1,250 @@
+*{   margin:0; padding:0;}
+p{
+	font-size: 25;
+}
+body{
+    background: white;
+    box-sizing: border-box;
+    font-family: SEGOE UI;
+    font-size: 100%;
+    overflow:hidden;
+    -webkit-user-select:none;
+}
+
+div.cont{
+    border:1px solid b2b2b2;
+}
+
+span.link{
+    cursor: pointer;
+    float:right;
+    background: white;
+    color:blue;
+    margin-right: 2%;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.sidebar{
+    position: relative;
+    border-right:1px solid #b2b2b2;
+    float:left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width:20%;
+    height:100%;
+    background: white;
+}
+
+.sidebar .band{
+    width:100%;
+    line-height: 300%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    border-bottom: 1px solid #e6e6e6;
+    color:#141823;
+}
+
+.sidebar .usertag .circle{
+    width:20%;
+    height:8%;
+    float:left;
+    margin-left:10%;
+    border-radius: 50%;
+}
+
+.sidebar .usertag{
+    padding:2%;
+    width:100%;
+    float:left;
+    font-weight: 400;
+    line-height: 300%;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+div.cont .msgpanel {
+    border: 1px solid red;
+    margin: 10dp;
+    background: white;
+    //position: relative;
+    //float: left;
+	//left: 25%;
+    //width: 100%;
+	margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.cont .band{
+   // width:100%;
+    text-align: center;
+    padding:1.5% 0 1.8% 0;
+    border-bottom: 1px solid #e6e6e6
+}
+
+div.cont .band .recname{
+    font-weight: 500;
+    font-size: 2em;
+}
+ 
+.msgdiv{
+    position:fixed;
+    top:93.3%;
+	margin: 5dp;
+    //width:50%;
+	//left:25%;
+	border: 1px solid blue;
+}
+
+.msgframe{
+    position: relative;
+    width:100%;
+    float:left;
+    font-size: 2em;
+    padding-top:3%;
+    height:79%;
+    overflow-y: auto;
+}
+
+.msgframe .sendcont,.msgframe .recievedcont{
+    width:100%;
+    position: relative;
+    float:left;
+    margin-bottom: 2%;
+}
+
+.msgframe .sent{
+	position: relative;
+    float:right;
+    right: 2%;
+    padding: 1%;
+    color:white;
+    background: #0084ff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.msgframe .recieved{
+    position: relative;
+    float:left;
+    left: 2%;
+    padding: 2%;
+    background: #f1f0f0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+
+.smiley{
+    position: absolute;
+    margin-left:5px;
+    width:17px;
+    margin-top:5px;
+    height:16px;
+    font-size: 0.9em;
+    padding:0% 1.1% 0 0.6%;
+    background-image: url(../images/smileys.png);
+    background-repeat: no-repeat;
+}
+
+.smiley.ok       {   background-position: 0px 0px; margin-top:2px;}
+.smiley.happiest {   background-position: 0px -170px;}
+.smiley.poop     {   background-position: 0px -287px; }
+.smiley.shark    {   background-position: 0px -320px; }
+.smiley.happy    {   background-position: 0px -341px; }
+.smiley.wickedhappy {background-position: 0px -101px; }
+.smiley.heaven   {   background-position: 0px -17px;  }
+.smiley.grin     {   background-position: 0px -35px;  } 
+.smiley.doubt    {   background-position: 0px -50px;  } 
+.smiley.crying      {   background-position: 0px -85px;  }
+.smiley.sad      {   background-position: 0px -120px;  }
+.smiley.shock      {   background-position: 0px -135px;  }
+.smiley.smart      {   background-position: 0px -152px;  }
+.smiley.shoot      {   background-position: 0px -185px;  }
+.smiley.heart    {   background-position: 0px -205px;  }
+.smiley.pyaara    {   background-position: 0px -220px;  }
+.smiley.winkkiss    {   background-position: 0px -237px;  }
+.smiley.dassan    {   background-position: 0px -255px;  }
+.smiley.penguin    {   background-position: 0px -271px;  }
+.smiley.facepalm    {   background-position: 0px -357px;  }
+.smiley.cool    {   background-position: 0px -375px;  }
+.smiley.tongue    {   background-position: 0px -390px;  }
+.smiley.halfsad    {   background-position: 0px -407px;  }
+.smiley.wink    {   background-position: 0px -443px;  }
+
+
+.msginput{
+    padding: 1%;
+    width:100%;
+    font-family: SEGOE UI;
+    border:none;
+    outline:none;
+    left:1%;
+    font-size: 1em;
+    color:black;
+    border-top: 1px solid #e6e6e6;
+}
+
+@-webkit-keyframes spin{
+    0%{ -webkit-transform: rotateZ(0deg);}
+    100%{ -webkit-transform: rotateZ(360deg);}
+}
+
+div.loader{
+    position: relative;
+    display: none;
+    width   : 20px;
+    height  : 20px;
+    background-image: url('../images/sprite.png');
+    background-position: -145px -120px;
+    -webkit-animation: spin 1s ease-out infinite;
+}
+
+div#userlist .loader{
+    margin-left: 45%;
+    margin-top: 70%;
+}
+
+div#msgframe .loader{
+    margin-left: 45%;
+    margin-top: 15%;
+}
+
+.cont .nameband{
+    font-size: 1.2em;
+}
+
+::-webkit-scrollbar {  
+    width: 10px;
+}  
+::-webkit-scrollbar-track {  
+    background-color: white;  
+    border-left: 1px solid #ccc; 
+
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #71a6f0;  
+    border-radius: 1px;
+}  
+::-webkit-scrollbar-thumb:hover {
+	background-color: #376bfb; 
+}  
+
+.btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    margin-top: 5px;
+    padding: 2px;
+    width: 100%; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
